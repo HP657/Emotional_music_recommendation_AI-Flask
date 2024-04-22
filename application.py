@@ -16,10 +16,12 @@ CORS(app)
 okt = Okt()
 
 # Word2Vec 모델 불러오기
-model = Word2Vec.load("modeling/word2vec_model.bin")
+model = Word2Vec.load("model/word2vec_model.bin")
 
 # SVM 모델 불러오기
-svm_model = load("modeling/svm_model.joblib")
+svm_model = load("model/svm_model.joblib")
+
+svm_model = load("model/svm_model.joblib")
 
 # Last.fm API key
 last_fm_api_key = os.getenv("song_api")
